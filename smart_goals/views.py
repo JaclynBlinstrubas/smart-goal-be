@@ -1,3 +1,4 @@
 from django.shortcuts import render
+from rest_framework import viewsets
+from .models import User, Goal, Notes
 
-# Create your views here.
