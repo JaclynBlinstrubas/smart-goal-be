@@ -1,3 +1,7 @@
+from django.contrib import admin
+from django.urls import path, include
+
+
 """smart_goals_django URL Configuration
 
 The `urlpatterns` list routes URLs to views. For more information please see:
@@ -18,4 +22,6 @@ from django.urls import path
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('api-auth', include('rest_framework.urls', namespace='rest_framework')),
+    path('', include('users.urls'))
 ]
