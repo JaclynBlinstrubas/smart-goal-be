@@ -40,7 +40,6 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'smart_goals',
 
     'corsheaders',
     'djoser',
@@ -48,6 +47,7 @@ INSTALLED_APPS = [
     'rest_framework.authtoken',
 
     'users',
+    'smart_goals'
 ]
 
 MIDDLEWARE = [

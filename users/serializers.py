@@ -1,8 +1,8 @@
-from djoser.serializers import UserCreateSerializer, UserSerializer
-from rest_framework import serializers
+from smart_goals import serializers
 from . import models
+from djoser.serializers import UserCreateSerializer
 
 class UserCreateSerializer(UserCreateSerializer):
     class Meta(UserCreateSerializer.Meta):
         model = models.User
-        fields = ('id', 'email', 'username', 'password', 'avatar')
+        fields = ('id', 'email', 'username', 'password')
