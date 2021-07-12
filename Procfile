@@ -1,0 +1,1 @@
+web: gunicorn smart_goal_be_django.wsgi
